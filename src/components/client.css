@@ -1,0 +1,29 @@
+.client-link {
+  margin-bottom: 20px;
+
+  transition: all 500ms;
+  width: 190px;
+  text-align: center;
+}
+
+.client-link-float-left {
+  margin-left: 50%;
+  float: left;
+  padding-left: 14px;
+}
+
+.client-link-float-right {
+  margin-right: 50%;
+  float: right;
+  padding-right: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .client-link-float-left,
+  .client-link-float-right {
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
