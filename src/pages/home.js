@@ -12,6 +12,7 @@ class Home extends Component {
   }
 
   render() {
+    const { profiles } = this.props;
     console.log(this.props.profiles);
     return (
       <div className="home-page">
@@ -24,26 +25,114 @@ class Home extends Component {
             <h1>Particles Here</h1>
           </Col>
         </Row>
-        {
-          //DESIGN
-        }
+
         <Row>
+          {
+            //DESIGN
+          }
           <Col s={6} m={6} l={6}>
             <Title title="Design" />
           </Col>
           <Col s={6} m={6} l={6} />
         </Row>
         <Row>
+          {//DESIGN PEOPLE
+          profiles &&
+            profiles.length > 0 &&
+            profiles
+              .filter(profile => profile.category === "design")
+              .map((profile, i) => {
+                return (
+                  <Col key={i} s={6} m={6} l={6}>
+                    <ProfileCard
+                      name={profile.name}
+                      role={profile.role}
+                      image={profile.image}
+                    />
+                  </Col>
+                );
+              })}
+        </Row>
+        <Row>
           {
-            //DESIGN PEOPLE
+            //ENGINEERING
           }
-
           <Col s={6} m={6} l={6}>
-            <ProfileCard />
+            <Title title="Engineering" />
           </Col>
+          <Col s={6} m={6} l={6} />
+        </Row>
+        <Row>
+          {//ENGINEERING PEOPLE
+          profiles &&
+            profiles.length > 0 &&
+            profiles
+              .filter(profile => profile.category === "engineering")
+              .map((profile, i) => {
+                return (
+                  <Col key={i} s={6} m={6} l={6}>
+                    <ProfileCard
+                      name={profile.name}
+                      role={profile.role}
+                      image={profile.image}
+                    />
+                  </Col>
+                );
+              })}
+        </Row>
+        <Row>
+          {
+            //CONSULTING
+          }
           <Col s={6} m={6} l={6}>
-            <ProfileCard />
+            <Title title="Consulting" />
           </Col>
+          <Col s={6} m={6} l={6} />
+        </Row>
+        <Row>
+          {//CONSULTING PEOPLE
+          profiles &&
+            profiles.length > 0 &&
+            profiles
+              .filter(profile => profile.category === "consulting")
+              .map((profile, i) => {
+                return (
+                  <Col key={i} s={6} m={6} l={6}>
+                    <ProfileCard
+                      name={profile.name}
+                      role={profile.role}
+                      image={profile.image}
+                    />
+                  </Col>
+                );
+              })}
+        </Row>
+        <Row>
+          {
+            //MARKETING
+          }
+          <Col s={6} m={6} l={6}>
+            <Title title="Marketing" />
+          </Col>
+          <Col s={6} m={6} l={6} />
+        </Row>
+        <Row>
+          {//MARKETING PEOPLE
+          profiles &&
+            profiles.length > 0 &&
+            profiles
+              .filter(profile => profile.category === "marketing")
+              .map((profile, i) => {
+                return (
+                  <Col key={i} s={6} m={6} l={6}>
+                    <ProfileCard
+                      name={profile.name}
+                      role={profile.role}
+                      image={profile.image}
+                    />
+                  </Col>
+                );
+              })}
         </Row>
 
         <Row>

@@ -13,10 +13,7 @@ xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     // Typical action to be performed when the document is ready:
     data = JSON.parse(xhttp.responseText);
-    ReactDOM.render(
-      <App profiles={JSON.stringify(data)} />,
-      document.getElementById("root")
-    );
+    ReactDOM.render(<App profiles={data} />, document.getElementById("root"));
   }
 };
 

@@ -5,7 +5,6 @@
 
 .profile-card figure {
   width: 100%;
-  height: 100%;
   padding-top: 67%;
   background-size: cover;
   background-position: center center;
@@ -15,11 +14,20 @@
   -webkit-margin-end: 0;
 }
 
-.profile-card .profile-info {
+.col:nth-child(2n + 1) .profile-card .profile-info {
   position: absolute;
   top: 20px;
   right: 20px;
+
   text-align: right;
+}
+
+.col:nth-child(2n) .profile-card .profile-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  text-align: left;
 }
 
 .profile-card .profile-info h3 {
@@ -35,4 +43,14 @@
   font-size: 14px;
   font-weight: 600;
   color: #ff0f00;
+}
+
+@media screen and (max-width: 800px) {
+  .col:nth-child(2n + 1) .profile-card .profile-info {
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+  }
 }
