@@ -8,7 +8,7 @@
   font-size: 32px;
   font-weight: 600;
   -webkit-margin-before: 0.83em;
-  -webkit-margin-after: 0em;
+  -webkit-margin-after: 0.83em;
 }
 
 @media screen and (max-width: 800px) {

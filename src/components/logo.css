@@ -1,0 +1,79 @@
+.logo {
+  display: block;
+  width: 110px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+
+.logo #face {
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  stroke-linecap: square;
+}
+
+.logo #outer-left,
+.logo #outer-right,
+.logo #face-back {
+  animation-delay: 4s;
+  animation-duration: 0.8s;
+  stroke-dasharray: 310;
+  stroke-dashoffset: 310;
+}
+
+.logo path {
+  fill: transparent;
+  animation-name: dash;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  stroke: #ff0f00;
+  stroke-width: 2;
+}
+
+.logo #brows path {
+  animation-delay: 0.4s;
+}
+
+.logo #eyes path,
+.logo #brows path {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation-duration: 0.8s;
+}
+
+.logo #horns path {
+  animation-delay: 2s;
+  animation-duration: 1.2s;
+  stroke-dasharray: 170;
+  stroke-dashoffset: 170;
+}
+
+.logo #beard path {
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+}
+
+.logo #moustache {
+  animation-delay: 2s;
+  animation-duration: 1.4s;
+}
+
+.logo #beard-left,
+.logo #beard-right {
+  animation-delay: 3.4s;
+  animation-duration: 0.5s;
+}
+
+.logo #beard-left,
+.logo #beard-right {
+  animation-delay: 3.4s;
+  animation-duration: 0.5s;
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

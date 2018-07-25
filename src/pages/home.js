@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-
-import { Row, Col, Title, ProfileCard, Client } from "../components";
+import Fade from "react-reveal/Fade";
+import { Row, Col, Title, ProfileCard, Client, Banner } from "../components";
 
 import "./home.css";
 
@@ -22,9 +22,40 @@ class Home extends Component {
 
         <Row liquid>
           <Col>
-            <h1>Particles Here</h1>
+            <Banner />
           </Col>
         </Row>
+
+        {
+          //Expertise Section
+        }
+        <section className="text-section">
+          <Row>
+            <Col s={6} m={6} l={6}>
+              <Title title="Expertise" />
+            </Col>
+            <Col s={6} m={6} l={6} />
+          </Row>
+          <Row>
+            <Col s={6} m={6} l={6}>
+              <div style={{ height: "1px" }} />
+            </Col>
+            <Col s={6} m={6} l={6}>
+              <div className="page-text-light">
+                <Fade right>
+                  <p>
+                    Years of experience in the start up grind have formed this
+                    group into a interdisciplinary but cohesive group of
+                    individuals. Based in Berlin, our headquarters is running
+                    global operations with the help of remote squads diversified
+                    throughout all major timezones.
+                  </p>
+                </Fade>
+              </div>
+            </Col>
+          </Row>
+        </section>
+
         {
           //DESIGN
         }
@@ -141,33 +172,6 @@ class Home extends Component {
                 );
               })}
         </Row>
-        {
-          //Expertise Section
-        }
-        <section className="text-section">
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <Title title="Expertise" />
-            </Col>
-            <Col s={6} m={6} l={6} />
-          </Row>
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <div style={{ height: "1px" }} />
-            </Col>
-            <Col s={6} m={6} l={6}>
-              <div className="page-text-light">
-                <p>
-                  Years of experience in the start up grind have formed this
-                  group into a interdisciplinary but cohesive group of
-                  individuals. Based in Berlin, our headquarters is running
-                  global operations with the help of remote squads diversified
-                  throughout all major timezones.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </section>
 
         {
           //Name section
@@ -186,13 +190,15 @@ class Home extends Component {
             </Col>
             <Col s={6} m={6} l={6}>
               <div className="page-text-light">
-                <p>
-                  Ea, the sumerian master shaper of the world, god of wisdom and
-                  of all magic, is our symbol for hard work and quality but also
-                  an ode to creativity and pragmatism. As his guards we stand
-                  for the idea that it is on us to shape the{" "}
-                  <sup>(digital)</sup> world for the better.
-                </p>
+                <Fade right>
+                  <p>
+                    Ea, the sumerian master shaper of the world, god of wisdom
+                    and of all magic, is our symbol for hard work and quality
+                    but also an ode to creativity and pragmatism. As his guards
+                    we stand for the idea that it is on us to shape the{" "}
+                    <sup>(digital)</sup> world for the better.
+                  </p>
+                </Fade>
               </div>
             </Col>
           </Row>
@@ -216,13 +222,18 @@ class Home extends Component {
               console.log(i % 2);
               return (
                 <div key={i}>
-                  <Client
-                    title={client.title}
-                    image={client.image}
-                    link={client.link}
-                    floatRight={i % 2}
-                  />
-                  <div className="clear" />
+                  <Fade
+                    left={i % 2 ? true : false}
+                    right={i % 2 ? false : true}
+                  >
+                    <Client
+                      title={client.title}
+                      image={client.image}
+                      link={client.link}
+                      floatRight={i % 2}
+                    />
+                    <div className="clear" />
+                  </Fade>
                 </div>
               );
             })}

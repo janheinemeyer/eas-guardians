@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 980px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
   .col-title {
     padding-left: 32px;
     padding-right: 32px;
@@ -165,7 +165,7 @@
   }
 }
 
-@media screen and (min-width: 980px) and (max-width: 1280px) {
+@media screen and (min-width: 1200px) and (max-width: 1640px) {
   .col-title {
     padding-left: 40px;
     padding-right: 40px;
@@ -227,7 +227,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1640px) {
   .col-lg-0 {
     display: none;
   }

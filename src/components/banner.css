@@ -1,0 +1,54 @@
+.page-banner {
+  position: relative;
+  width: 100%;
+  background-color: #313638;
+  padding-top: 18%;
+}
+
+.page-banner-logo {
+}
+
+.banner-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.short-mission {
+  margin-left: 50%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  animation: fadeInRight 0.5s 5s ease-out backwards;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 26px;
+  letter-spacing: 0.3px;
+  color: white;
+  transition: all 0.5s;
+}
+
+.short-mission em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .short-mission {
+    margin-left: 20px;
+  }
+}

@@ -19,7 +19,7 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 800px) {
   .row-layout {
     padding-left: 0px;
     padding-right: 0px;
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 980px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
   .row-layout {
     padding-left: 16px;
     padding-right: 16px;
@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (min-width: 980px) and (max-width: 1340px) {
+@media screen and (min-width: 1200px) and (max-width: 1640px) {
   .row-layout {
     padding-left: 32px;
     padding-right: 32px;
@@ -43,9 +43,9 @@
   }
 }
 
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1640px) {
   .row {
-    width: 1280px;
+    width: 1600px;
     margin: 0 auto;
   }
   .row-liquid {

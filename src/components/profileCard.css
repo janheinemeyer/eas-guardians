@@ -14,11 +14,14 @@
   -webkit-margin-end: 0;
 }
 
+.profile-card .profile-info {
+  transition: all 1s;
+}
+
 .col:nth-child(2n + 1) .profile-card .profile-info {
   position: absolute;
   top: 20px;
   right: 20px;
-
   text-align: right;
 }
 
@@ -26,7 +29,6 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-
   text-align: left;
 }
 
@@ -48,7 +50,7 @@
 @media screen and (max-width: 800px) {
   .col:nth-child(2n + 1) .profile-card .profile-info {
     position: absolute;
-
+    top: auto;
     bottom: 20px;
     left: 20px;
     text-align: left;

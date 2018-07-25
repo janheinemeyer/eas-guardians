@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Fade from "react-reveal/Fade";
 import "./title.css";
 
 class Title extends Component {
@@ -7,7 +7,9 @@ class Title extends Component {
     const { title } = this.props;
     return (
       <div className="page-title">
-        <h2>{title || "Title here"}</h2>
+        <Fade bottom>
+          <h2>{title || "Title here"}</h2>
+        </Fade>
       </div>
     );
   }
