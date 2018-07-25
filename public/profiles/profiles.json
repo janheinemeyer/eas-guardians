@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ALEJANDRO PÉREZ ROCA",
+    "role": "Frontend Developer",
+    "image": "/images/people/alejandro-small.jpg",
+    "category": "design"
+  },
+  {
+    "name": "AQUILES VALDIVIA OROZCO",
+    "role": "Co-Founder/ Head of Product bei StynTouch",
+    "image": "/images/people/aquiles-small.jpg",
+    "category": "design"
+  },
+  {
+    "name": "BASAR KÖRG",
+    "role": "Digital Analytics Specialist",
+    "image": "/images/people/basar-small.jpg",
+    "category": "marketing"
+  }
+]

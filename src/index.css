@@ -1,5 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&subset=latin-ext");
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: 600;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: 400;
 }
