@@ -31,6 +31,11 @@ p {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .clear {
   clear: both;
 }
@@ -39,4 +44,46 @@ p {
   width: 100%;
   height: 92px;
   clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .separator-large {
+    width: 100%;
+    height: 40px;
+    clear: both;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-more-button {
+  float: right;
+  color: #ff0f00;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (max-width: 800px) {
+  .show-more-button {
+    margin-left: 20px;
+    float: left;
+  }
+}
+
+.navbar-shadow {
+  height: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-shadow {
+    height: 0px;
+  }
 }

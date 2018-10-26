@@ -1,19 +1,43 @@
 import React from "react";
-import ReactDOM from "react-dom";
+//import ReactDOM from "react-dom";
+import { hydrate, render } from "react-dom";
+
+import { BrowserRouter, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-//import registerServiceWorker from "./registerServiceWorker";
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
-
+//to get public data.json
 var xhttp = new XMLHttpRequest();
 var data = {};
+
+const rootElement = document.getElementById("root");
+
 xhttp.onreadystatechange = function() {
   if (this.readyState === 4 && this.status === 200) {
-    // Typical action to be performed when the document is ready:
     data = JSON.parse(xhttp.responseText);
-    ReactDOM.render(<App data={data} />, document.getElementById("root"));
+
+    if (rootElement.hasChildNodes()) {
+      hydrate(
+        <BrowserRouter>
+          <Route path="*" component={props => <App {...props} data={data} />} />
+        </BrowserRouter>,
+        rootElement
+      );
+    } else {
+      render(
+        <BrowserRouter>
+          <Route path="*" component={props => <App {...props} data={data} />} />
+        </BrowserRouter>,
+        rootElement
+      );
+    }
+
+    // ReactDOM.render(
+    //   <HashRouter>
+    //     <Route path="/" component={props => <App data={data} />} />
+    //   </HashRouter>,
+    //   rootElement
+    // );
   }
 };
 

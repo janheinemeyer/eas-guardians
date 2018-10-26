@@ -17,5 +17,20 @@
 }
 
 .text-section {
-  padding: 20px;
+  padding: 20px 40px;
+}
+
+.text-section.title {
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .text-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.category-section-container {
+  margin-bottom: 20px;
 }

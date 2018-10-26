@@ -10,7 +10,8 @@ class ProfileCard extends Component {
         <Fade>
           <figure
             style={{
-              backgroundImage: `url(${image || "/images/placeholder.svg"})`
+              backgroundImage: `url(${process.env.PUBLIC_URL}${image ||
+                "/images/placeholder.svg"})`
             }}
           />
           <div className="profile-info">

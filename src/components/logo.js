@@ -8,6 +8,8 @@ export default class Logo extends React.Component {
         viewBox="0 0 110 156"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
+        height={this.props.height}
+        width={this.props.width || 110}
       >
         <title>EA's guardians logo</title>
 

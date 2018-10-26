@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Helmet from "react-helmet";
+//import Helmet from "react-helmet";
 import Fade from "react-reveal/Fade";
-import { Row, Col, Title, ProfileCard, Client, Banner } from "../components";
+import { Row, Col, Title, Banner, Category } from "../components";
 
 import "./home.css";
 
@@ -12,19 +12,11 @@ class Home extends Component {
   }
 
   render() {
-    const { profiles, clients } = this.props.data;
+    const { profiles, categories } = this.props.data;
 
     return (
       <div className="home-page">
-        <Helmet>
-          <meta name="description" content="Content " />
-        </Helmet>
-
-        <Row liquid>
-          <Col>
-            <Banner />
-          </Col>
-        </Row>
+        <Banner />
 
         {
           //Expertise Section
@@ -55,123 +47,19 @@ class Home extends Component {
             </Col>
           </Row>
         </section>
-
-        {
-          //DESIGN
-        }
-        <section className="text-section">
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <Title title="Design" />
-            </Col>
-            <Col s={6} m={6} l={6} />
-          </Row>
-        </section>
-        <Row>
-          {//DESIGN PEOPLE
-          profiles &&
-            profiles.length > 0 &&
-            profiles
-              .filter(profile => profile.category === "design")
-              .map((profile, i) => {
-                return (
-                  <Col key={i} s={6} m={6} l={6}>
-                    <ProfileCard
-                      name={profile.name}
-                      role={profile.role}
-                      image={profile.image}
-                    />
-                  </Col>
-                );
-              })}
-        </Row>
-        {
-          //ENGINEERING
-        }
-        <section className="text-section">
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <Title title="Engineering" />
-            </Col>
-            <Col s={6} m={6} l={6} />
-          </Row>
-        </section>
-        <Row>
-          {//ENGINEERING PEOPLE
-          profiles &&
-            profiles.length > 0 &&
-            profiles
-              .filter(profile => profile.category === "engineering")
-              .map((profile, i) => {
-                return (
-                  <Col key={i} s={6} m={6} l={6}>
-                    <ProfileCard
-                      name={profile.name}
-                      role={profile.role}
-                      image={profile.image}
-                    />
-                  </Col>
-                );
-              })}
-        </Row>
-        {
-          //CONSULTING
-        }
-        <section className="text-section">
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <Title title="Consulting" />
-            </Col>
-            <Col s={6} m={6} l={6} />
-          </Row>
-        </section>
-        <Row>
-          {//CONSULTING PEOPLE
-          profiles &&
-            profiles.length > 0 &&
-            profiles
-              .filter(profile => profile.category === "consulting")
-              .map((profile, i) => {
-                return (
-                  <Col key={i} s={6} m={6} l={6}>
-                    <ProfileCard
-                      name={profile.name}
-                      role={profile.role}
-                      image={profile.image}
-                    />
-                  </Col>
-                );
-              })}
-        </Row>
-        {
-          //MARKETING
-        }
-        <section className="text-section">
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <Title title="Marketing" />
-            </Col>
-            <Col s={6} m={6} l={6} />
-          </Row>
-        </section>
-        <Row>
-          {//MARKETING PEOPLE
-          profiles &&
-            profiles.length > 0 &&
-            profiles
-              .filter(profile => profile.category === "marketing")
-              .map((profile, i) => {
-                return (
-                  <Col key={i} s={6} m={6} l={6}>
-                    <ProfileCard
-                      name={profile.name}
-                      role={profile.role}
-                      image={profile.image}
-                    />
-                  </Col>
-                );
-              })}
-        </Row>
+        {categories &&
+          categories.length > 0 &&
+          categories.map((cat, i) => {
+            return (
+              <Category
+                key={i}
+                title={cat.title}
+                category={cat.key}
+                profiles={profiles}
+                withLink={cat.url}
+              />
+            );
+          })}
 
         {
           //Name section
@@ -204,40 +92,6 @@ class Home extends Component {
           </Row>
         </section>
         <div className="separator-large" />
-        {
-          //Clients
-        }
-        <section className="footer-clients">
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <Title title="Clients" />
-            </Col>
-            <Col s={6} m={6} l={6} />
-          </Row>
-
-          {//Map Clients
-          clients &&
-            clients.length > 0 &&
-            clients.map((client, i) => {
-              console.log(i % 2);
-              return (
-                <div key={i}>
-                  <Fade
-                    left={i % 2 ? true : false}
-                    right={i % 2 ? false : true}
-                  >
-                    <Client
-                      title={client.title}
-                      image={client.image}
-                      link={client.link}
-                      floatRight={i % 2}
-                    />
-                    <div className="clear" />
-                  </Fade>
-                </div>
-              );
-            })}
-        </section>
       </div>
     );
   }

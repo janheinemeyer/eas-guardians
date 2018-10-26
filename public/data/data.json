@@ -1,70 +1,129 @@
 {
+  "categories": [
+    { "key": "engineering", "title": "Engineering", "url": "/engineering" },
+    {
+      "key": "product",
+      "title": "Product Management",
+      "url": "/product-management"
+    },
+    { "key": "data", "title": "Data", "url": "/data" },
+    { "key": "consulting", "title": "Consulting", "url": "/consulting" },
+
+    { "key": "marketing", "title": "Marketing", "url": "/marketing" },
+    { "key": "design", "title": "Design", "url": "/design" }
+  ],
+
   "profiles": [
     {
-      "name": "ALEJANDRO PÉREZ ROCA",
-      "role": "Frontend Developer",
-      "image": "/images/people/alejandro-small.jpg",
-      "category": "engineering"
+      "name": "JAN HEINEMEYER",
+      "role": "Growth & Change Consultant",
+      "image": "/images/people/jan-small.jpg",
+      "category": "consulting",
+      "description":
+        "I love to find the blind spots in an organisation and help to grow from already existing potential rather than finding the silver bullet. My key competences: lead and motivate people, CRO, fixing process & company culture, change management, intermediary between business needs and operations",
+      "tags": ["CRO", "process", "management"]
     },
     {
       "name": "AQUILES VALDIVIA OROZCO",
-      "role": "Co-Founder/ Head of Product bei StynTouch",
+      "role": "Product Consultant & Developer",
       "image": "/images/people/aquiles-small.jpg",
-      "category": "consulting"
+      "category": "consulting",
+      "description":
+        "Process driven people manager. Excellent communication skills and project manager with a knack for writing his own code."
     },
     {
-      "name": "BASAR KÖRG",
-      "role": "Digital Analytics Specialist",
-      "image": "/images/people/basar-small.jpg",
-      "category": "marketing"
+      "name": "KAY BUCKSCH",
+      "role": "Senior Full-Stack Software Developer",
+      "image": "/images/people/kay-small.jpg",
+      "category": "engineering",
+      "description":
+        "Founder + Senior Software Developer with the interest to build great software products. Skills: Organizing + Structure, distributed knowledge in many areas (business, marketing, usability); leader. Tech-Skills: Java, node.js, backend, frontend, mobile, AngularJS, phonegap"
+    },
+    {
+      "name": "MARTINA NIKOLOVA",
+      "role": "UI Design & Frontend Development",
+      "image": "/images/people/martina-small.png",
+      "category": "design",
+      "description": ""
+    },
+    {
+      "name": "PETER LIEBIG",
+      "role": "Founder / CTO MagCorp",
+      "image": "/images/people/peter-small.jpg",
+      "category": "engineering",
+      "description":
+        "Magento expert with years of experience in all major e-commerce solutions. MacCorp is a boutique one stop shop for all Magento related development matters. Main skills: PHP, Backend, API / Interfaces"
     },
     {
       "name": "CHRIS KLUGE",
       "role": "Backend- & Infrastructure Development",
       "image": "/images/people/chris-small.jpg",
-      "category": "marketing"
+      "category": "engineering",
+      "description":
+        "Very experienced backend engineer with a love for infrastructure and deployment processes. Wanna scale your service properly? I'm your guy."
+    },
+    {
+      "name": "JAN KYRI",
+      "role": "Interdisciplinary problem solver with a focus on data",
+      "image": "/images/people/jankyri-small.jpg",
+      "category": "data",
+      "description":
+        "Interdisciplinary swiss army knife for data problems with minimal overhead. My business background and experience allow me to grasp business models and processes quickly, communicate with stakeholders on all levels and structure my projects. Complementing this is a solid understanding of SQL and Python. I understand technical concepts and data pipeline components and am able to choose the best tool for the job depending on the situation. Skills: SQL, Python, Data Engineering, Data Analytics, AWS, Postgres"
+    },
+    {
+      "name": "BASAR KÖRG",
+      "role": "Digital Analytics Specialist",
+      "image": "/images/people/basar-small.jpg",
+      "category": "data",
+      "description":
+        "Web tracking and data warehouses are my territory. I am making sense out of your data and take care of scalable reporting infrastructure your team will love."
+    },
+    {
+      "name": "JULIAN KOCH",
+      "role": "UX/UI & Frontend Development",
+      "image": "/images/people/julian-small.jpg",
+      "category": "design",
+      "description":
+        "In over 10 years of working in digital media, I've gained experiences in both design and development. I also developed a strong business skillset by founding companies and bringing new products to market."
     },
     {
       "name": "DAVID DARNOWSKY",
-      "role": "UX/UI",
-      "image": "",
-      "category": "design"
-    },
-    {
-      "name": "HELMUT SATTLER",
-      "role": "Product & Business Photography",
-      "image": "/images/people/helmut-small.jpg",
-      "category": "consulting"
-    },
-    {
-      "name": "JAN HEINEMEYER",
-      "role": "Product Manager",
-      "image": "/images/people/jan-small.jpg",
-      "category": "consulting"
-    },
-    {
-      "name": "KAY BUCKSCH",
-      "role": "Backend Development java & node.js",
-      "image": "",
-      "category": "engineering"
+      "role": "UX Architect & CRO Consultant",
+      "image": "/images/people/david-small.jpg",
+      "category": "design",
+      "description":
+        "In a nutshell: My focus is to help teams creating great web & mobile based applications with a strong focus on user experience and conversion rate optimization — from a product strategy, user journey, wireframes, designs to a conversion optimized product. I have an IT based background (practical, academic) paired with the passion to innovate. My typical day: Solve problems, evaluate opportunities, bring solutions to life."
     },
     {
       "name": "MATHIAS MORTAG",
       "role": "Corporate Design & Video",
       "image": "/images/people/mathias-small.jpg",
-      "category": "design"
+      "category": "design",
+      "description":
+        "Graphic Design, Corporate Design, Branding, Web Design, Video Editing"
+    },
+    {
+      "name": "HELMUT SATTLER",
+      "role": "Product & Business Photography",
+      "image": "/images/people/helmut-small.jpg",
+      "category": "design",
+      "description": " "
+    },
+    {
+      "name": "STEFAN MAIER",
+      "role": "FullStack Developer",
+      "image": "/images/people/stefan-small.png",
+      "category": "engineering",
+      "description":
+        "RubyOnRails, Golang, NodeJS, React, React Native - co founder http://rigma.io"
     },
     {
       "name": "NILS BORCHERS",
       "role": "UI Design & Web Development",
       "image": "/images/people/nils-small.jpg",
-      "category": "design"
-    },
-    {
-      "name": "PETER LIEBIG",
-      "role": "Founder / CTO MagCorp",
-      "image": "",
-      "category": "consulting"
+      "category": "engineering",
+      "description":
+        "Senior frontend developer with a knack for design. A rough mockup is enough for me to build a UI you and your customers will love. I love to play around with latest technology and make things look pretty."
     }
   ],
   "clients": [

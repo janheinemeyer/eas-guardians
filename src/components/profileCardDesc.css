@@ -1,0 +1,132 @@
+.profile-card-description {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-card-image {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  box-sizing: border-box;
+  padding: 24px;
+  transition: all 0.5s;
+}
+
+.profile-card-image figure {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  border-radius: 50%;
+}
+
+.profile-card-info {
+  padding: 16px;
+}
+
+.profile-card-info .profile-title {
+  font-size: 22px;
+}
+
+.profile-card-info .profile-role {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.profile-card-info .profile-description {
+  font-weight: 300;
+}
+
+.profile-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-tag {
+  border-radius: 20px;
+  background: #ff0f00;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 570px) {
+  .profile-card-image {
+    width: 124px;
+    height: 124px;
+    padding: 16px;
+  }
+  .profile-card-info {
+    padding: 16px;
+    padding-left: 0px;
+  }
+  .profile-card-info .profile-title {
+    font-size: 18px;
+  }
+  .profile-card-info .profile-role {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .profile-card-info .profile-description {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 800px) {
+  .profile-card-image {
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+  }
+  .profile-card-info {
+    padding: 16px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .profile-card-image {
+    width: 160px;
+    height: 160px;
+    padding: 16px;
+  }
+  .profile-card-info {
+    padding: 16px 8px;
+  }
+  .profile-card-info .profile-title {
+    font-size: 20px;
+  }
+
+  .profile-card-info .profile-role {
+    margin-top: 4px;
+  }
+
+  .profile-card-info .profile-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1640px) {
+  .profile-card-image {
+    width: 208px;
+    height: 208px;
+  }
+  .profile-card-info {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+}

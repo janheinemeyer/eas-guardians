@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #313638;
   padding-top: 18%;
+  overflow: hidden;
 }
 
 .page-banner-logo {
@@ -50,5 +51,6 @@
 @media screen and (max-width: 800px) {
   .short-mission {
     margin-left: 20px;
+    font-size: 16px;
   }
 }

@@ -1,0 +1,162 @@
+{
+  "profiles": [
+    {
+      "name": "ALEJANDRO PÉREZ ROCA",
+      "role": "Frontend Developer",
+      "image": "/images/people/alejandro-small.jpg",
+      "category": "engineering"
+    },
+    {
+      "name": "AQUILES VALDIVIA OROZCO",
+      "role": "Co-Founder/ Head of Product bei StynTouch",
+      "image": "/images/people/aquiles-small.jpg",
+      "category": "consulting"
+    },
+    {
+      "name": "BASAR KÖRG",
+      "role": "Digital Analytics Specialist",
+      "image": "/images/people/basar-small.jpg",
+      "category": "marketing"
+    },
+    {
+      "name": "CHRIS KLUGE",
+      "role": "Backend- & Infrastructure Development",
+      "image": "/images/people/chris-small.jpg",
+      "category": "marketing"
+    },
+    {
+      "name": "DAVID DARNOWSKY",
+      "role": "UX/UI",
+      "image": "",
+      "category": "design"
+    },
+    {
+      "name": "HELMUT SATTLER",
+      "role": "Product & Business Photography",
+      "image": "/images/people/helmut-small.jpg",
+      "category": "consulting"
+    },
+    {
+      "name": "JAN HEINEMEYER",
+      "role": "Product Manager",
+      "image": "/images/people/jan-small.jpg",
+      "category": "consulting"
+    },
+    {
+      "name": "KAY BUCKSCH",
+      "role": "Backend Development java & node.js",
+      "image": "",
+      "category": "engineering"
+    },
+    {
+      "name": "MATHIAS MORTAG",
+      "role": "Corporate Design & Video",
+      "image": "/images/people/mathias-small.jpg",
+      "category": "design"
+    },
+    {
+      "name": "NILS BORCHERS",
+      "role": "UI Design & Web Development",
+      "image": "/images/people/nils-small.jpg",
+      "category": "design"
+    },
+    {
+      "name": "PETER LIEBIG",
+      "role": "Founder / CTO MagCorp",
+      "image": "",
+      "category": "consulting"
+    }
+  ],
+  "clients": [
+    {
+      "title": "Babbel",
+      "image": "/images/clients/babbel.png",
+      "link": "https://www.babbel.com/"
+    },
+    {
+      "title": "CarJump",
+      "image": "/images/clients/carjump.png",
+      "link": "http://carjump.me/"
+    },
+    {
+      "title": "Compeon",
+      "image": "/images/clients/compeon.png",
+      "link": "https://www.compeon.de/"
+    },
+    {
+      "title": "Convo",
+      "image": "/images/clients/convo.png",
+      "link": "https://www.convo.com/"
+    },
+    {
+      "title": "ERNW",
+      "image": "/images/clients/ernw.png",
+      "link": "https://www.ernw.de/"
+    },
+    {
+      "title": "Glossybox",
+      "image": "/images/clients/glossybox.png",
+      "link": "https://www.glossybox.com/"
+    },
+    {
+      "title": "Jodel",
+      "image": "/images/clients/jodel.png",
+      "link": "https://jodel-app.com/"
+    },
+    {
+      "title": "Just Spices",
+      "image": "/images/clients/justspices.png",
+      "link": "https://www.justspices.de/"
+    },
+    {
+      "title": "Lendico",
+      "image": "/images/clients/lendico.png",
+      "link": "https://www.lendico.de/"
+    },
+    {
+      "title": "Movinga",
+      "image": "/images/clients/movinga.png",
+      "link": "https://www.movinga.com/"
+    },
+    {
+      "title": "Outfittery",
+      "image": "/images/clients/outfittery.png",
+      "link": "http://outfittery.de/"
+    },
+    {
+      "title": "Quandoo",
+      "image": "/images/clients/quandoo.png",
+      "link": "http://quandoo.de/"
+    },
+    {
+      "title": "Shop Gate",
+      "image": "/images/clients/shopgate.png",
+      "link": "http://shopgate.com/"
+    },
+    {
+      "title": "SumUp",
+      "image": "/images/clients/sumup.png",
+      "link": "https://sumup.com/"
+    },
+    {
+      "title": "Travador",
+      "image": "/images/clients/travador.png",
+      "link": "https://www.travador.com/"
+    },
+    {
+      "title": "Vaola",
+      "image": "/images/clients/vaola.png",
+      "link": "http://www.vaola.de/"
+    },
+    {
+      "title": "ZALORA",
+      "image": "/images/clients/zalora.png",
+      "link": "http://www.zalora.sg/"
+    },
+    {
+      "title": "Zeitgold",
+      "image": "/images/clients/zeitgold.png",
+      "link": "http://www.zeitgold.com/"
+    }
+  ]
+}
