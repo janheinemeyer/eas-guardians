@@ -17,7 +17,7 @@
 }
 
 .text-section {
-  padding: 20px 40px;
+  padding: 0px 40px;
 }
 
 .text-section.title {
@@ -29,8 +29,4 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-.category-section-container {
-  margin-bottom: 20px;
 }

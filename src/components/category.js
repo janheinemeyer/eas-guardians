@@ -21,25 +21,17 @@ class Category extends Component {
     return (
       <div className="category-section-container">
         <section className="text-section title">
-          {searchable ? (
-            <div className="centered">
+          <div className="centered">
+            {withLink ? (
+              <Link to={withLink}>
+                <Title title={title} />
+              </Link>
+            ) : (
               <Title title={title} />
-            </div>
-          ) : (
-            <Row>
-              <Col s={6} m={6} l={6}>
-                {withLink ? (
-                  <Link to={withLink}>
-                    <Title title={title} />
-                  </Link>
-                ) : (
-                  <Title title={title} />
-                )}
-              </Col>
-              <Col s={6} m={6} l={6} />
-            </Row>
-          )}
+            )}
+          </div>
         </section>
+        <div className="separator-medium" />
 
         {searchable && (
           <div>
@@ -91,16 +83,15 @@ class Category extends Component {
                 return false;
               })}
         </Row>
-
+        <div className="separator-medium" />
         {withLink && (
-          <Row>
-            <Col s={6} m={6} l={6}>
-              <div className="show-more-button">
-                <Link to={withLink}>Show me more</Link>
-              </div>
-            </Col>
-            <Col s={6} m={6} l={6} />
-          </Row>
+          <div className="centered">
+            <Fade>
+              <Link className="show-more-button" to={withLink}>
+                Show me more
+              </Link>
+            </Fade>
+          </div>
         )}
       </div>
     );

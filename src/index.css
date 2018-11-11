@@ -46,11 +46,27 @@ a {
   clear: both;
 }
 
+.separator-medium {
+  width: 100%;
+  height: 40px;
+  clear: both;
+}
+
+.separator-160 {
+  width: 100%;
+  height: 160px;
+  clear: both;
+}
+
 @media screen and (max-width: 800px) {
   .separator-large {
-    width: 100%;
     height: 40px;
-    clear: both;
+  }
+  .separator-160 {
+    height: 80px;
+  }
+  .separator-medium {
+    height: 20px;
   }
 }
 
@@ -66,11 +82,20 @@ a {
 }
 
 .show-more-button {
-  float: right;
-  color: #ff0f00;
+  color: #313638;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
+  padding: 10px 40px;
+  border: 1px solid #313638;
+  border-radius: 4px;
+  transition: 0.1s ease-in-out;
 }
+
+.show-more-button:hover {
+  color: #ff0f00;
+  border: 1px solid #ff0f00;
+}
+
 @media screen and (max-width: 800px) {
   .show-more-button {
     margin-left: 20px;
@@ -85,5 +110,50 @@ a {
 @media screen and (max-width: 900px) {
   .navbar-shadow {
     height: 0px;
+  }
+}
+
+h2.title-medium {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.red {
+  color: #ff0f00;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.max-width-text {
+  width: 600px;
+  max-width: 100%;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  h2.title-medium {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .fs-20 {
+    font-size: 15px;
   }
 }

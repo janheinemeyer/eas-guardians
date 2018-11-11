@@ -28,6 +28,7 @@ class Page extends Component {
     return (
       <div className="category-page">
         <div className="navbar-shadow" />
+        <div className="separator-large" />
         <Category
           searchable
           key={category}

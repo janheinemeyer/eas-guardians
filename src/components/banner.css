@@ -19,16 +19,18 @@
 }
 
 .short-mission {
-  margin-left: 50%;
+  text-align: center;
   padding-top: 7%;
   padding-bottom: 7%;
-  animation: fadeInRight 0.5s 5s ease-out backwards;
+  animation: fadeInRight 0.5s 3s ease-out backwards;
   font-size: 20px;
   font-weight: 300;
-  margin-top: 26px;
+
   letter-spacing: 0.3px;
   color: white;
   transition: all 0.5s;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
 }
 
 .short-mission em {
@@ -50,7 +52,7 @@
 
 @media screen and (max-width: 800px) {
   .short-mission {
-    margin-left: 20px;
+  
     font-size: 16px;
   }
 }

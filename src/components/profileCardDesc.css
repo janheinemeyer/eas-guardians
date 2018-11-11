@@ -118,15 +118,17 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1640px) {
+@media screen and (min-width: 1200px) {
   .profile-card-image {
     width: 208px;
     height: 208px;
+    padding-top: 32px;
   }
   .profile-card-info {
     padding: 16px;
+    padding-top: 32px;
+    padding-right: 64px;
   }
 }
 
-@media screen and (min-width: 1640px) {
-}
+

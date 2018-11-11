@@ -16,6 +16,7 @@
 
 .profile-card .profile-info {
   transition: all 1s;
+  padding: 32px 64px 0 16px;
 }
 
 .col:nth-child(2n + 1) .profile-card .profile-info {

@@ -19,7 +19,7 @@ class Client extends Component {
     return (
       <div className={this.classes()}>
         {image && (
-          <a href={link} target="_blank" alt={title}>
+          <a href={link} target="_blank" rel="noopener noreferrer" alt={title}>
             <img src={`${process.env.PUBLIC_URL}${image}`} alt={title} />
           </a>
         )}
